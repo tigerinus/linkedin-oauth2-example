@@ -1,5 +1,10 @@
+# vim
+*.swp
 
-gs
+# npm
+package-lock.json
+
+# Logs
 logs
 *.log
 npm-debug.log*

@@ -11,5 +11,8 @@
     "oauth2"
   ],
   "author": "Tiger Wang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
