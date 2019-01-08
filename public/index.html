@@ -28,17 +28,23 @@
   </head>
   <body>
 	<div class="centered">
-		<form class="mdl-dialog" action="https://www.linkedin.com/oauth/v2/authorization" target="_blank">
-		  <input class="mdl-textfield__input" type="hidden" name="response_type" value="code">
-		  <input class="mdl-textfield__input" type="hidden" name="state" value="aHardToGuessValue">
-		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			<input class="mdl-textfield__input" type="text" id="redirect_uri" name="redirect_uri" value="http://localhost:4000/auth">
-			<label class="mdl-textfield__label" for="redirect_uri">redirect_uri</label>
-		  </div>
-		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			<input class="mdl-textfield__input" type="text" id="client_id" name="client_id">
-			<label class="mdl-textfield__label" for="client_id">client_id</label>
-		  </div>
+		<form name="authform" class="mdl-dialog" action="https://www.linkedin.com/oauth/v2/authorization" target="_blank">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="a" name="response_type" value="code" readonly>
+              <label class="mdl-textfield__label" for="a">response_type</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="b" name="state" value="any_state_backend_should_know" readonly>
+              <label class="mdl-textfield__label" for="b">state</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="c" name="redirect_uri" value="http://localhost:4000/auth" readonly>
+              <label class="mdl-textfield__label" for="c">redirect_uri</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="d" name="client_id" value="77tpo9igafy35s" readonly>
+              <label class="mdl-textfield__label" for="d">client_id</label>
+            </div>
 		  <input class="mdl-button center-aligned" type="submit" value="Submit">
 		</form>
 	</div>
